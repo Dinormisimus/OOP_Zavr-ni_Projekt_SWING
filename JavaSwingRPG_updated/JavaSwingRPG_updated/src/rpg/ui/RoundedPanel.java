@@ -1,9 +1,7 @@
 package rpg.ui;
 
 import javax.swing.*;
-import javax.swing.border.AbstractBorder;
 import java.awt.*;
-import java.awt.geom.RoundRectangle2D;
 import rpg.*;
 
 public class RoundedPanel extends JPanel {

@@ -172,7 +172,7 @@ public class JavaSwingRPG extends JFrame {
         lblName.setForeground(COLOR_TXT_WHITE);
         gbc.gridy = 0; inputPanel.add(lblName, gbc);
 
-        JTextField tfName = new JTextField("Arthas");
+        JTextField tfName = new JTextField();
         tfName.setBackground(COLOR_CARD);
         tfName.setForeground(COLOR_TXT_WHITE);
         tfName.setCaretColor(COLOR_TXT_WHITE);
@@ -205,11 +205,11 @@ public class JavaSwingRPG extends JFrame {
         Runnable updateStatDisplay = () -> {
             String selected = (String) cbClass.getSelectedItem();
             if ("Warrior".equals(selected)) {
-                areaStats.setText("⚔️  WARRIOR\n\n HP:   130\n Mana: 50\n ATK:  20\n DEF:  16\n SPD:  8\n\nAbilities:\n• Strike (basic)\n• Shield Bash  [20 MP]\n• War Cry      [15 MP]\n• Whirlwind    [35 MP]\n• Taunt        [10 MP]\n• Execute      [45 MP]\n\nEvolves → Elite Warrior @ Lvl 10");
+                areaStats.setText("  ⚔️  WARRIOR\n\n  HP:   130\n  Mana: 50\n  ATK:  20\n  DEF:  16\n  SPD:  8\n\n  Abilities:\n  • Strike (basic)\n  • Shield Bash  [20 MP]\n  • War Cry      [15 MP]\n  • Whirlwind    [35 MP]\n  • Taunt        [10 MP]\n  • Execute      [45 MP]\n\n  Evolves → Elite Warrior @ Lvl 10");
             } else if ("Mage".equals(selected)) {
-                areaStats.setText("🧙  MAGE\n\n HP:   75\n Mana: 140\n ATK:  25\n DEF:  6\n SPD:  11\n\nAbilities:\n• Fire Bolt (basic)\n• Fireball    [30 MP]\n• Ice Bolt    [20 MP]\n• Mana Drain  [15 MP]\n• Lightning   [40 MP]\n• Heal        [35 MP]\n\nEvolves → Arch Mage @ Lvl 10");
+                areaStats.setText("  🧙  MAGE\n\n  HP:   75\n  Mana: 140\n  ATK:  25\n  DEF:  6\n  SPD:  11\n\n  Abilities:\n  • Fire Bolt (basic)\n  • Fireball    [30 MP]\n  • Ice Bolt    [20 MP]\n  • Mana Drain  [15 MP]\n  • Lightning   [40 MP]\n  • Heal        [35 MP]\n\n  Evolves → Arch Mage @ Lvl 10");
             } else {
-                areaStats.setText("🗡️  ROGUE\n\n HP:   90\n Mana: 70\n ATK:  17\n DEF:  10\n SPD:  18\n\nAbilities:\n• Stab (basic, 28% crit)\n• Backstab    [20 MP]\n• Smoke Bomb  [15 MP]\n• Poison      [25 MP]\n• Shadow Step [30 MP]\n• Fan of Knives[40 MP]\n\nEvolves → Shadow Rogue @ Lvl 10");
+                areaStats.setText("  🗡️  ROGUE\n\n  HP:   90\n  Mana: 70\n  ATK:  17\n  DEF:  10\n  SPD:  18\n\n  Abilities:\n  • Stab (basic, 28% crit)\n  • Backstab    [20 MP]\n  • Smoke Bomb  [15 MP]\n  • Poison      [25 MP]\n  • Shadow Step [30 MP]\n  • Fan of Knives[40 MP]\n\n  Evolves → Shadow Rogue @ Lvl 10");
             }
         };
 

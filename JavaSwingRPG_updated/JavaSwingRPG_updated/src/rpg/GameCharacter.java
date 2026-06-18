@@ -30,7 +30,6 @@ public abstract class GameCharacter implements Serializable {
     public int getDef() { return def; }
     public int getSpd() { return spd; }
     public int getLevel() { return level; }
-    public void setLevel(int level) { this.level = level; }
 
     public boolean isAlive() { return this.hp > 0; }
 

@@ -3,7 +3,7 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 .kotlin
-saves/*.dat
+saves/ser*
 
 ### Eclipse ###
 .apt_generated
